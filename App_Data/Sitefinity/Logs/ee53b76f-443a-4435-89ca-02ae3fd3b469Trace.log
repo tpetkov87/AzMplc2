@@ -1,0 +1,170 @@
+----------------------------------------
+Timestamp: 1/4/2018 9:45:55 AM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Security.Data.OpenAccessProfileProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.Decorators.OpenAccessDecorator+<>c__DisplayClass24: Void <EnsureModelReset>b__22()
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void InstallDefaults()
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void OnCommand(System.Web.UI.WebControls.CommandEventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.WebControls.LinkButton: Void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Collections.Specialized.NameValueCollection)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequestWithNoAssert(System.Web.HttpContext)
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+ASP.sfres_telerik_sitefinity_resources_pages_startup_aspx: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/4/2018 9:46:05 AM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Modules.Libraries.Data.OpenAccessLibrariesProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.Decorators.OpenAccessDecorator+<>c__DisplayClass24: Void <EnsureModelReset>b__22()
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, ModuleVersionInfo, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void OnCommand(System.Web.UI.WebControls.CommandEventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.WebControls.LinkButton: Void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Collections.Specialized.NameValueCollection)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequestWithNoAssert(System.Web.HttpContext)
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+ASP.sfres_telerik_sitefinity_resources_pages_startup_aspx: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/4/2018 9:46:18 AM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Modules.Ecommerce.Catalog.Data.OpenAccessCatalogDataProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.Decorators.OpenAccessDecorator+<>c__DisplayClass24: Void <EnsureModelReset>b__22()
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, ModuleVersionInfo, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void OnCommand(System.Web.UI.WebControls.CommandEventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.WebControls.LinkButton: Void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Collections.Specialized.NameValueCollection)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequestWithNoAssert(System.Web.HttpContext)
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+ASP.sfres_telerik_sitefinity_resources_pages_startup_aspx: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/4/2018 9:46:24 AM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Security.Data.OpenAccessProfileProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.Decorators.OpenAccessDecorator+<>c__DisplayClass24: Void <EnsureModelReset>b__22()
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void SaveChanges(Boolean)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, ModuleVersionInfo, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void OnCommand(System.Web.UI.WebControls.CommandEventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.WebControls.LinkButton: Void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Collections.Specialized.NameValueCollection)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequestWithNoAssert(System.Web.HttpContext)
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+ASP.sfres_telerik_sitefinity_resources_pages_startup_aspx: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 1/4/2018 9:46:44 AM
+
+Message: Operation: 'ApplicationRestart'. Parameters: 'flags:Default;sendRestartApplicationSystemMessage:True'. Reason: 'SystemSetup'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Services.SystemManager: Boolean RestartApplication(Telerik.Sitefinity.Services.OperationReason, Telerik.Sitefinity.Services.SystemRestartFlags, Boolean)
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.WebControls.LinkButton: Void OnCommand(System.Web.UI.WebControls.CommandEventArgs)
+System.Web.UI.WebControls.LinkButton: Void RaisePostBackEvent(System.String)
+System.Web.UI.WebControls.LinkButton: Void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Web.UI.IPostBackEventHandler, System.String)
+System.Web.UI.Page: Void RaisePostBackEvent(System.Collections.Specialized.NameValueCollection)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequestWithNoAssert(System.Web.HttpContext)
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+ASP.sfres_telerik_sitefinity_resources_pages_startup_aspx: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+PipelineStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult BeginProcessRequestNotification(System.Web.HttpContext, System.AsyncCallback)
+System.Web.HttpRuntime: System.Web.RequestNotificationStatus ProcessRequestNotificationPrivate(System.Web.Hosting.IIS7WorkerRequest, System.Web.HttpContext)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotificationHelper(IntPtr, IntPtr, IntPtr, Int32)
+System.Web.Hosting.PipelineRuntime: Int32 ProcessRequestNotification(IntPtr, IntPtr, IntPtr, Int32)'.
+
+
+----------------------------------------
