@@ -19,58 +19,6 @@
             This class represents the controller of News widget.
             </summary>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.Index(System.Nullable{System.Int32})">
-            <summary>
-            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListTemplateName"/>
-            </summary>
-            <param name="page">The page.</param>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListByTaxon(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Nullable{System.Int32})">
-            <summary>
-            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListTemplateName"/> 
-            </summary>
-            <param name="taxonFilter">The taxonomy filter.</param>
-            <param name="page">The page.</param>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.Details(Telerik.Sitefinity.News.Model.NewsItem)">
-            <summary>
-            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.DetailTemplateName"/>
-            </summary>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.GetLocations">
-            <summary>
-            Gets the information for all of the content types that a control is able to show.
-            </summary>
-            <returns>
-            List of location info of the content that this control is able to show.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.HandleUnknownAction(System.String)">
-            <inheritDoc/>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.InitializeModel">
-            <summary>
-            Initializes the model.
-            </summary>
-            <returns>
-            The <see cref="T:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.SetRedirectUrlQueryString(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
-            <summary>
-            Sets the redirect URL query string.
-            </summary>
-            <param name="taxon">The taxon.</param>
-        </member>
         <member name="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListTemplateName">
             <summary>
             Gets or sets the name of the template that will be displayed when widget is in List view.
@@ -120,54 +68,61 @@
             The metadata container.
             </value>
         </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.Index(System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListTemplateName" />
+            </summary>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListByTaxon(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Nullable{System.Int32})">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.ListTemplateName" /> 
+            </summary>
+            <param name="taxonFilter">The taxonomy filter.</param>
+            <param name="page">The page.</param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.Details(Telerik.Sitefinity.News.Model.NewsItem)">
+            <summary>
+            Renders appropriate list view depending on the <see cref="P:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.DetailTemplateName"/>
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.GetLocations">
+            <summary>
+            Gets the information for all of the content types that a control is able to show.
+            </summary>
+            <returns>
+            List of location info of the content that this control is able to show.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.HandleUnknownAction(System.String)">
+            <inheritDoc/>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.InitializeModel">
+            <summary>
+            Initializes the model.
+            </summary>
+            <returns>
+            The <see cref="T:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Controllers.NewsController.SetRedirectUrlQueryString(Telerik.Sitefinity.Taxonomies.Model.ITaxon)">
+            <summary>
+            Sets the redirect URL query string.
+            </summary>
+            <param name="taxon">The taxon.</param>
+        </member>
         <member name="T:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel">
             <summary>
             Classes that implement this interface could be used as model for the News widget.
-            </summary>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.CreateListViewModel(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Int32)">
-            <summary>
-            Creates a view model for use in list views.
-            </summary>
-            <param name="taxonFilter">The taxon filter.</param>
-            <param name="page">The page.</param>
-            <returns>A view model for use in list views.</returns>
-            <exception cref="T:System.ArgumentException">'page' argument has to be at least 1.;page</exception>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.CreateDetailsViewModel(Telerik.Sitefinity.Model.IDataItem)">
-            <summary>
-            Creates the details view model.
-            </summary>
-            <param name="item">The item.</param>
-            <returns>A view model for use in detail views.</returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel)">
-            <summary>
-            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
-                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
-                notification.
-                When notified, all cached objects with dependency on the provided keys will expire.
-            </summary>
-            <param name="viewModel">View model that will be used for displaying the data.</param>
-            <returns>
-            The <see cref="!:IList"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel)">
-            <summary>
-            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
-                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
-                notification.
-                When notified, all cached objects with dependency on the provided keys will expire.
-            </summary>
-            <param name="viewModel">View model that will be used for displaying the data.</param>
-            <returns>
-            The <see cref="!:IList"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetLocations">
-            <summary>
-            Gets the information for all of the content types that a control is able to show.
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.SerializedSelectedItemsIds">
@@ -276,16 +231,55 @@
             </summary>
             <value>The URL key prefix.</value>
         </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.CreateListViewModel(Telerik.Sitefinity.Taxonomies.Model.ITaxon,System.Int32)">
+            <summary>
+            Creates a view model for use in list views.
+            </summary>
+            <param name="taxonFilter">The taxon filter.</param>
+            <param name="page">The page.</param>
+            <returns>A view model for use in list views.</returns>
+            <exception cref="T:System.ArgumentException">'page' argument has to be at least 1.;page</exception>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.CreateDetailsViewModel(Telerik.Sitefinity.Model.IDataItem)">
+            <summary>
+            Creates the details view model.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>A view model for use in detail views.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetKeysOfDependentObjects(Telerik.Sitefinity.Frontend.Mvc.Models.ContentDetailsViewModel)">
+            <summary>
+            Gets a collection of <see cref="!:CacheDependencyNotifiedObject"/>.
+                The <see cref="!:CacheDependencyNotifiedObject"/> represents a key for which cached items could be subscribed for
+                notification.
+                When notified, all cached objects with dependency on the provided keys will expire.
+            </summary>
+            <param name="viewModel">View model that will be used for displaying the data.</param>
+            <returns>
+            The <see cref="!:IList"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.INewsModel.GetLocations">
+            <summary>
+            Gets the information for all of the content types that a control is able to show.
+            </summary>
+        </member>
         <member name="T:Telerik.Sitefinity.Frontend.News.Mvc.Models.NewsModel">
             <summary>
             This class represents model used for News widget.
             </summary>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.NewsModel.GetItemsQuery">
-            <summary>
-            Gets the items query.
-            </summary>
-            <returns>The query.</returns>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.News.Mvc.Models.NewsModel.ContentType">
             <summary>
@@ -294,6 +288,12 @@
             <value>
             The type of the content.
             </value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.News.Mvc.Models.NewsModel.GetItemsQuery">
+            <summary>
+            Gets the items query.
+            </summary>
+            <returns>The query.</returns>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.News.Mvc.StringResources.NewsWidgetResources">
             <summary>
