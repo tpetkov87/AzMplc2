@@ -13213,7 +13213,7 @@
             <summary>
             Gets a list of child PageNodes.
             </summary>
-            <value>A list of <see cref="T:Telerik.Sitefinity.Taxonomies.Model.HierarchicalTaxon"/> objects.</value>
+            <value>A list of <see cref="T:Telerik.Sitefinity.Pages.Model.PageNode"/> objects.</value>
         </member>
         <member name="P:Telerik.Sitefinity.Pages.Model.PageNode.PageNodeReferences">
             <summary>
