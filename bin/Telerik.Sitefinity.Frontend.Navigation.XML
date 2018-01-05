@@ -19,18 +19,6 @@
             This class represents the controller of Breadcrumb widget.
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.TemplateName">
-            <summary>
-            Gets or sets the name of the template that will be displayed.
-            </summary>
-            <value></value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.Model">
-            <summary>
-            Gets the model.
-            </summary>
-            <value>The model.</value>
-        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.Index">
             <summary>
             Indexes this instance.
@@ -43,15 +31,27 @@
             </summary>
             <param name="actionName">The name of the attempted action.</param>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.BreadCrumExtender">
-            <summary>
-            Gets the virtual nodes.
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.InitializeModel">
             <summary>
             Initializes the model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.Model">
+            <summary>
+            Gets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.BreadcrumbController.BreadCrumExtender">
+            <summary>
+            Gets the virtual nodes.
             </summary>
             <returns></returns>
         </member>
@@ -71,6 +71,42 @@
             <summary>
             This class represents the controller of Navigation widget.
             </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.Index">
+            <summary>
+            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.TemplateName"/>
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.GetView(System.String,Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel)">
+            <summary>
+            Gets the view with provided name.
+            </summary>
+            <param name="viewName">
+            Name of the view.
+            </param>
+            <param name="model">
+            The model.
+            </param>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.InitializeModel">
+            <summary>
+            Initializes the model.
+            </summary>
+            <returns>
+            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel"/>.
+            </returns>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.TemplateName">
             <summary>
@@ -148,66 +184,10 @@
             The model.
             </value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.Index">
-            <summary>
-            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.TemplateName"/>
-            </summary>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.GetView(System.String,Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel)">
-            <summary>
-            Gets the view with provided name.
-            </summary>
-            <param name="viewName">
-            Name of the view.
-            </param>
-            <param name="model">
-            The model.
-            </param>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.HandleUnknownAction(System.String)">
-            <summary>
-            Called when a request matches this controller, but no method with the specified action name is found in the controller.
-            </summary>
-            <param name="actionName">The name of the attempted action.</param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.InitializeModel">
-            <summary>
-            Initializes the model.
-            </summary>
-            <returns>
-            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel"/>.
-            </returns>
-        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController">
             <summary>
             This class represents the controller of the Site selector widget.
             </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.TemplateName">
-            <summary>
-            Gets or sets the name of the template that will be displayed.
-            </summary>
-            <value></value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.Model">
-            <summary>
-            Gets the Site selector widget model.
-            </summary>
-            <value>
-            The model.
-            </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.IsMultisiteMode">
-            <summary>
-            Determines whether the system context is in multisite mode.
-            </summary>
-            <value></value>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.Index">
             <summary>
@@ -237,79 +217,25 @@
             </summary>
             <param name="sites">The sites.</param>
         </member>
-        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController">
-            <summary>
-            This class represents the controller of Language selector widget.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.TemplateName">
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.TemplateName">
             <summary>
             Gets or sets the name of the template that will be displayed.
             </summary>
             <value></value>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.Model">
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.Model">
             <summary>
-            Gets the Language selector widget model.
+            Gets the Site selector widget model.
             </summary>
             <value>
             The model.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.LanguageSelectorOnTemplateMessage">
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.SiteSelectorController.IsMultisiteMode">
             <summary>
-            Gets the Language selector widget on template message.
+            Determines whether the system context is in multisite mode.
             </summary>
-            <returns></returns>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.CurrentHttpContext">
-            <summary>
-            Gets the current HTTP context from the SystemManager.
-            </summary>
-            <value>The current HTTP context.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.IsEdit">
-            <summary>
-            Gets whether the page is in edit mode.
-            </summary>
-            <value>The is edit.</value>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.Index">
-            <summary>
-            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.TemplateName"/>
-            </summary>
-            <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.HandleUnknownAction(System.String)">
-            <summary>
-            Called when a request matches this controller, but no method with the specified action name is found in the controller.
-            </summary>
-            <param name="actionName">The name of the attempted action.</param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.AppendDetailItemAndParamsToUrl(System.String,System.Globalization.CultureInfo)">
-            <summary>
-            Appends the detail item and parameters to URL.
-            </summary>
-            <param name="url">The URL.</param>
-            <param name="culture">The culture info.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.PagePreRenderCompleteHandler(System.Object,System.EventArgs)">
-            <summary>
-            Handler called when the Page's PreRenderComplete event is fired.
-            </summary>
-            <param name="sender">The sender.</param>
-            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.InitializeModel">
-            <summary>
-            Initializes the model.
-            </summary>
-            <returns>
-            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel"/>.
-            </returns>
+            <value></value>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbIncludeOption">
             <summary>
@@ -331,129 +257,17 @@
                 This class represents model used for Breadcrumb widget.
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowHomePageLink">
-            <summary>
-            Gets or sets the show home page link.
-            </summary>
-            <value>The show home page link.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.BreadcrumbIncludeOption">
-            <summary>
-            Gets or sets the breadcrumb include option.
-            </summary>
-            <value>The breadcrumb include option.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowCurrentPageInTheEnd">
-            <summary>
-            Gets or sets the show current page in the end.
-            </summary>
-            <value>The show current page in the end.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowGroupPages">
-            <summary>
-            Gets or sets the show group pages.
-            </summary>
-            <value>The show group pages.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.CssClass">
-            <summary>
-            Gets or sets the CSS class that will be applied on the wrapper div of the BreadcrumbWidget (if such is presented).
-            </summary>
-            <value>The CSS class.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.StartingPageId">
-            <summary>
-            Gets or sets the strting page id from which to start breadcrumb path.
-            </summary>
-            <value>The strting page id.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SiteMapProviderName">
-            <summary>
-            Gets or sets the name of the site map provider.
-            </summary>
-            <value>The name of the site map provider.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.AllowVirtualNodes">
-            <summary>
-            Gets or sets the allow virtual nodes.
-            For example, the last control on the page,
-            which registers a breadcrumb extender with Telerik.Sitefinity.Web.RegisterBreadcrumbExtender(this Page page, IBreadcrumExtender extender) extension method of the page,
-            will be applied.
-            </summary>
-            <value>The allow virtual nodes.</value>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.CreateViewModel(Telerik.Sitefinity.Web.IBreadcrumExtender)">
-            <summary>
-            Creates the view model.
-            </summary>
-            <param name="extender">The object used for retrieving the breadcrump datasources.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.GetMvcDetailWidgetVirtualNodes">
-            <summary>
-            Gets the virtual nodes for the controllers that have detail action method.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.GetVirtualNodes(Telerik.Sitefinity.Web.IBreadcrumExtender)">
-            <summary>
-            Gets the virtual nodes.
-            </summary>
-            <param name="extender">The extender.</param>
-            <returns></returns>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SelectedPageNode">
-            <summary>
-            Gets the selected page node.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SiteMapProvider">
-            <summary>
-            Gets the site map provider.
-            </summary>
-            <value>The site map provider.</value>
-        </member>
-        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel">
-            <summary>
-                This class represents view model used for displaying Breadcrumb's nodes.
-            </summary>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.#ctor(System.Collections.Generic.IEnumerable{System.Web.SiteMapNode})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel" /> class.
-            </summary>
-            <param name="list">The list.</param>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.SiteMapNodes">
-            <summary>
-            Gets or sets the site map nodes.
-            </summary>
-            <value>The site map nodes.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.ShowCurrentPageInTheEnd">
-            <summary>
-            Gets or sets the show current page in the end.
-            </summary>
-            <value>The show current page in the end.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.IsTemplateRendered">
-            <summary>
-            Gets or sets the is template rendered.
-            </summary>
-            <value>The is template rendered.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.CssClass">
-            <summary>
-            Gets or sets the CSS class that will be applied on the wrapper div of the Breadcrumb selector widget (if such is presented).
-            </summary>
-            <value>
-            The CSS class.
-            </value>
-        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.IBreadcrumbModel">
             <summary>
                 This class represents model used for Breadcrumb widget.
             </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.IBreadcrumbModel.CreateViewModel(Telerik.Sitefinity.Web.IBreadcrumExtender)">
+            <summary>
+            Creates the view model.
+            </summary>
+            <param name="extender">The extender.</param>
+            <returns></returns>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.IBreadcrumbModel.SiteMapProviderName">
             <summary>
@@ -506,16 +320,128 @@
             </summary>
             <value>The allow virtual nodes.</value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.IBreadcrumbModel.CreateViewModel(Telerik.Sitefinity.Web.IBreadcrumExtender)">
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.CreateViewModel(Telerik.Sitefinity.Web.IBreadcrumExtender)">
             <summary>
             Creates the view model.
+            </summary>
+            <param name="extender">The object used for retrieving the breadcrump datasources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.GetMvcDetailWidgetVirtualNodes">
+            <summary>
+            Gets the virtual nodes for the controllers that have detail action method.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.GetVirtualNodes(Telerik.Sitefinity.Web.IBreadcrumExtender)">
+            <summary>
+            Gets the virtual nodes.
             </summary>
             <param name="extender">The extender.</param>
             <returns></returns>
         </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowHomePageLink">
+            <summary>
+            Gets or sets the show home page link.
+            </summary>
+            <value>The show home page link.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.BreadcrumbIncludeOption">
+            <summary>
+            Gets or sets the breadcrumb include option.
+            </summary>
+            <value>The breadcrumb include option.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowCurrentPageInTheEnd">
+            <summary>
+            Gets or sets the show current page in the end.
+            </summary>
+            <value>The show current page in the end.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.ShowGroupPages">
+            <summary>
+            Gets or sets the show group pages.
+            </summary>
+            <value>The show group pages.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the BreadcrumbWidget (if such is presented).
+            </summary>
+            <value>The CSS class.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.StartingPageId">
+            <summary>
+            Gets or sets the strting page id from which to start breadcrumb path.
+            </summary>
+            <value>The strting page id.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SiteMapProviderName">
+            <summary>
+            Gets or sets the name of the site map provider.
+            </summary>
+            <value>The name of the site map provider.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.AllowVirtualNodes">
+            <summary>
+            Gets or sets the allow virtual nodes.
+            For example, the last control on the page,
+            which registers a breadcrumb extender with Telerik.Sitefinity.Web.RegisterBreadcrumbExtender(this Page page, IBreadcrumExtender extender) extension method of the page,
+            will be applied.
+            </summary>
+            <value>The allow virtual nodes.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SelectedPageNode">
+            <summary>
+            Gets the selected page node.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbModel.SiteMapProvider">
+            <summary>
+            Gets the site map provider.
+            </summary>
+            <value>The site map provider.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel">
+            <summary>
+                This class represents view model used for displaying Breadcrumb's nodes.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.#ctor(System.Collections.Generic.IEnumerable{System.Web.SiteMapNode})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel"/> class.
+            </summary>
+            <param name="list">The list.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.SiteMapNodes">
+            <summary>
+            Gets or sets the site map nodes.
+            </summary>
+            <value>The site map nodes.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.ShowCurrentPageInTheEnd">
+            <summary>
+            Gets or sets the show current page in the end.
+            </summary>
+            <value>The show current page in the end.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.IsTemplateRendered">
+            <summary>
+            Gets or sets the is template rendered.
+            </summary>
+            <value>The is template rendered.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbViewModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the Breadcrumb selector widget (if such is presented).
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbNodeModel.#ctor(System.String,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbNodeModel" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.Breadcrumb.BreadcrumbNodeModel"/> class.
             </summary>
             <param name="url">The URL.</param>
             <param name="title">The title.</param>
@@ -532,9 +458,88 @@
             </summary>
             <value>The title.</value>
         </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController">
+            <summary>
+            This class represents the controller of Language selector widget.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.Index">
+            <summary>
+            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.TemplateName"/>
+            </summary>
+            <returns>
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.HandleUnknownAction(System.String)">
+            <summary>
+            Called when a request matches this controller, but no method with the specified action name is found in the controller.
+            </summary>
+            <param name="actionName">The name of the attempted action.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.AppendDetailItemAndParamsToUrl(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Appends the detail item and parameters to URL.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="culture">The culture info.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.PagePreRenderCompleteHandler(System.Object,System.EventArgs)">
+            <summary>
+            Handler called when the Page's PreRenderComplete event is fired.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.InitializeModel">
+            <summary>
+            Initializes the model.
+            </summary>
+            <returns>
+            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel"/>.
+            </returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.Model">
+            <summary>
+            Gets the Language selector widget model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.LanguageSelectorOnTemplateMessage">
+            <summary>
+            Gets the Language selector widget on template message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.CurrentHttpContext">
+            <summary>
+            Gets the current HTTP context from the SystemManager.
+            </summary>
+            <value>The current HTTP context.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.LanguageSelectorController.IsEdit">
+            <summary>
+            Gets whether the page is in edit mode.
+            </summary>
+            <value>The is edit.</value>
+        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel">
             <summary>
             Classes that implement this interface could be used as model for the Language selector widget.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel.CreateViewModel">
+            <summary>
+            Creates the language selector view model.
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel.IncludeCurrentLanguage">
@@ -557,10 +562,34 @@
             The CSS class.
             </value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.ILanguageSelectorModel.CreateViewModel">
+        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel">
             <summary>
-            Creates the language selector view model.
+            Classes that implement this interface could be used as model for the Navigation widget.
             </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.Nodes">
+            <summary>
+            Gets the list of site map nodes that will be displayed in the navigation widget.
+            </summary>
+            <value>
+            The nodes.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the NavigationWidget (if such is presented).
+            </summary>
+            <value>
+            The CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.CurrentSiteMapNode">
+            <summary>
+            Gets the current site map node.
+            </summary>
+            <value>
+            The current site map node.
+            </value>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorItem">
             <summary>
@@ -569,7 +598,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorItem.#ctor(System.String,System.String,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="!:Language" /> class.
+            Initializes a new instance of the <see cref="!:Language"/> class.
             </summary>
             <param name="displayName">The display name.</param>
             <param name="url">The URL.</param>
@@ -600,17 +629,8 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel"/> class.
             </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.IncludeCurrentLanguage">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.MissingTranslationAction">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.CssClass">
-            <inheritdoc />
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.CreateViewModel">
             <inheritdoc />
@@ -669,6 +689,15 @@
             </summary>
             <param name="culture">The language that is missing.</param>
         </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.IncludeCurrentLanguage">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.MissingTranslationAction">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorModel.CssClass">
+            <inheritdoc />
+        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorViewModel">
             <summary>
             This class represents the Language selector model that will rendered inside the Language selector widget.
@@ -676,7 +705,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorViewModel.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorViewModel" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorViewModel"/> class.
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.LanguageSelector.LanguageSelectorViewModel.Languages">
@@ -720,35 +749,6 @@
             The link(item) for the non-available languages will be displayed and will link to a specified page.
             </summary>
         </member>
-        <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel">
-            <summary>
-            Classes that implement this interface could be used as model for the Navigation widget.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.Nodes">
-            <summary>
-            Gets the list of site map nodes that will be displayed in the navigation widget.
-            </summary>
-            <value>
-            The nodes.
-            </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.CssClass">
-            <summary>
-            Gets or sets the CSS class that will be applied on the wrapper div of the NavigationWidget (if such is presented).
-            </summary>
-            <value>
-            The CSS class.
-            </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.INavigationModel.CurrentSiteMapNode">
-            <summary>
-            Gets the current site map node.
-            </summary>
-            <value>
-            The current site map node.
-            </value>
-        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel">
             <summary>
                 This class represents model used for Navigation widget.
@@ -756,7 +756,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel"/> class.
             </summary>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.#ctor(Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.PageSelectionMode,System.Guid,Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SelectedPageModel[],System.Nullable{System.Int32},System.Boolean,System.String,System.Boolean)">
@@ -770,6 +770,115 @@
             <param name="showParentPage">if set to <c>true</c> [show parent page].</param>
             <param name="cssClass">The CSS class.</param>
             <param name="openExternalPageInNewTab">if set to <c>true</c> [open external page in new tab].</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetCacheDependencyObjects">
+            <summary>
+            Gets a collection of cached and changed items that need to be invalidated for the specific views that display all types inheriting from
+            the abstract type <see cref="T:Telerik.Sitefinity.GenericContent.Model.Content"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetProvider">
+            <summary>
+                Gets the sitemap provider.
+            </summary>
+            <returns>
+                The <see cref="T:System.Web.SiteMapProvider"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.AddChildNodes(System.Web.SiteMapNode,System.Boolean)">
+            <summary>
+            Adds the child nodes to the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.Nodes"/> collection.
+            </summary>
+            <param name="startNode">
+            The start node.
+            </param>
+            <param name="addParentNode">
+            if set to <c>true</c> adds parent node.
+            </param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.CheckSiteMapNode(System.Web.SiteMapNode)">
+            <summary>
+            Checks the site map node.
+            </summary>
+            <param name="node">
+            The node.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetLinkTarget(System.Web.SiteMapNode)">
+            <summary>
+            Gets the link target.
+            </summary>
+            <param name="node">
+            The node.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.ResolveUrl(System.Web.SiteMapNode)">
+            <summary>
+            Resolves the URL.
+            </summary>
+            <param name="node">
+            The node.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InstantiateNodeViewModel(System.Web.SiteMapNode)">
+            <summary>
+            Instantiates a node view model.
+            </summary>
+            <param name="node">The node.</param>
+            <returns>An instance of a node view model.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InstantiateNodeViewModel(System.String,System.String)">
+            <summary>
+            Instantiates a node view model.
+            </summary>
+            <param name="url">The URL.</param>
+            <param name="target">The target.</param>
+            <returns>An instance of a node view model.</returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.CreateNodeViewModelRecursive(System.Web.SiteMapNode,System.Nullable{System.Int32})">
+            <summary>
+            Creates the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NodeViewModel"/> from the SiteMapNode and populates recursive their child nodes.
+            </summary>
+            <param name="node">
+            The original site map node.
+            </param>
+            <param name="levelsToInclude">
+            The levels to include.
+            </param>
+            <returns>
+            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NodeViewModel"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.HasSelectedChild(System.Web.SiteMapNode)">
+            <summary>
+            Determines whether the current node is descendant of the <see cref="T:System.Web.SiteMapNode"/> instance.
+            </summary>
+            <param name="node">
+            The node.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InitializeNavigationWidgetSettings">
+            <summary>
+                Initializes the settings for the navigation widget.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.provider">
+            <summary>
+            The provider
+            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.CssClass">
             <summary>
@@ -836,122 +945,13 @@
             </summary>
             <value>The name of the site map provider.</value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetCacheDependencyObjects">
-            <summary>
-            Gets a collection of cached and changed items that need to be invalidated for the specific views that display all types inheriting from
-            the abstract type <see cref="T:Telerik.Sitefinity.GenericContent.Model.Content"/>.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetProvider">
-            <summary>
-                Gets the sitemap provider.
-            </summary>
-            <returns>
-                The <see cref="T:System.Web.SiteMapProvider" />.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.AddChildNodes(System.Web.SiteMapNode,System.Boolean)">
-            <summary>
-            Adds the child nodes to the <see cref="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.Nodes"/> collection.
-            </summary>
-            <param name="startNode">
-            The start node.
-            </param>
-            <param name="addParentNode">
-            if set to <c>true</c> adds parent node.
-            </param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.CheckSiteMapNode(System.Web.SiteMapNode)">
-            <summary>
-            Checks the site map node.
-            </summary>
-            <param name="node">
-            The node.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.GetLinkTarget(System.Web.SiteMapNode)">
-            <summary>
-            Gets the link target.
-            </summary>
-            <param name="node">
-            The node.
-            </param>
-            <returns>
-            The <see cref="T:System.String"/>.
-            </returns>
-        </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.RootNodeId">
             <summary>
                 Gets the root node identifier.
             </summary>
             <returns>
-                The <see cref="T:System.Guid" />.
+                The <see cref="T:System.Guid"/>.
             </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.ResolveUrl(System.Web.SiteMapNode)">
-            <summary>
-            Resolves the URL.
-            </summary>
-            <param name="node">
-            The node.
-            </param>
-            <returns>
-            The <see cref="T:System.String"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InstantiateNodeViewModel(System.Web.SiteMapNode)">
-            <summary>
-            Instantiates a node view model.
-            </summary>
-            <param name="node">The node.</param>
-            <returns>An instance of a node view model.</returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InstantiateNodeViewModel(System.String,System.String)">
-            <summary>
-            Instantiates a node view model.
-            </summary>
-            <param name="url">The URL.</param>
-            <param name="target">The target.</param>
-            <returns>An instance of a node view model.</returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.CreateNodeViewModelRecursive(System.Web.SiteMapNode,System.Nullable{System.Int32})">
-            <summary>
-            Creates the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NodeViewModel"/> from the SiteMapNode and populates recursive their child nodes.
-            </summary>
-            <param name="node">
-            The original site map node.
-            </param>
-            <param name="levelsToInclude">
-            The levels to include.
-            </param>
-            <returns>
-            The <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NodeViewModel"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.HasSelectedChild(System.Web.SiteMapNode)">
-            <summary>
-            Determines whether the current node is descendant of the <see cref="T:System.Web.SiteMapNode"/> instance.
-            </summary>
-            <param name="node">
-            The node.
-            </param>
-            <returns>
-            The <see cref="T:System.Boolean"/>.
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.InitializeNavigationWidgetSettings">
-            <summary>
-                Initializes the settings for the navigation widget.
-            </summary>
-        </member>
-        <member name="F:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NavigationModel.provider">
-            <summary>
-            The provider
-            </summary>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.NodeViewModel">
             <summary>
@@ -1130,6 +1130,11 @@
             The model of the site selector widget.
             </summary>
         </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.ISiteSelectorModel.CreateViewModel">
+            <summary>
+            Creates the site selector view model.
+            </summary>
+        </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.ISiteSelectorModel.IncludeCurrentSite">
             <summary>
             Determines whether to include the current site in the list of sites.
@@ -1161,11 +1166,6 @@
             The CSS class.
             </value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.ISiteSelectorModel.CreateViewModel">
-            <summary>
-            Creates the site selector view model.
-            </summary>
-        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteLanguagesDisplayMode">
             <summary>
             Determines how to display each language version of the site.
@@ -1188,41 +1188,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel" /> class.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.CssClass">
-            <summary>
-            Gets or sets the CSS class that will be applied on the wrapper div of the Site selector widget (if such is presented).
-            </summary>
-            <value>The CSS class.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.IncludeCurrentSite">
-            <summary>
-            Determines whether to include the current site in the list of sites.
-            </summary>
-            <value>The include current site.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.EachLanguageAsSeparateSite">
-            <summary>
-            Determines whether to display each language version as a separate site.
-            </summary>
-            <value></value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.SiteLanguagesDisplayMode">
-            <summary>
-            Determines how to display each language version of the site.
-            </summary>
-            <value>The site languages display mode.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.UseLiveUrl">
-            <summary>
-            Determines whether to use the live or the staging URLs of the sites.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.UrlService">
-            <summary>
-            Gets the URL service.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel"/> class.
             </summary>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.CreateViewModel">
@@ -1275,6 +1241,40 @@
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.GetDisplayedLanguageName(System.Globalization.CultureInfo)">
             <summary>
             Gets the name of the displayed language.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.CssClass">
+            <summary>
+            Gets or sets the CSS class that will be applied on the wrapper div of the Site selector widget (if such is presented).
+            </summary>
+            <value>The CSS class.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.IncludeCurrentSite">
+            <summary>
+            Determines whether to include the current site in the list of sites.
+            </summary>
+            <value>The include current site.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.EachLanguageAsSeparateSite">
+            <summary>
+            Determines whether to display each language version as a separate site.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.SiteLanguagesDisplayMode">
+            <summary>
+            Determines how to display each language version of the site.
+            </summary>
+            <value>The site languages display mode.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.UseLiveUrl">
+            <summary>
+            Determines whether to use the live or the staging URLs of the sites.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.UrlService">
+            <summary>
+            Gets the URL service.
             </summary>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorViewModel">

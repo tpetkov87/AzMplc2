@@ -19,40 +19,12 @@
             This class represents the controller of Search box widget.
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.EmptyLinkText">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.IsEmpty">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.WidgetCssClass">
-            <summary>
-            Gets the widget CSS class.
-            </summary>
-            <value>
-            The widget CSS class.
-            </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.TemplateName">
-            <summary>
-            Gets or sets the name of the template that will be displayed.
-            </summary>
-            <value></value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.Model">
-            <summary>
-            Gets the Search box widget model.
-            </summary>
-            <value>
-            The model.
-            </value>
-        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.Index">
             <summary>
-            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.TemplateName" />
+            Renders appropriate view depending on the <see cref="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.TemplateName"/>
             </summary>
             <returns>
-            The <see cref="T:System.Web.Mvc.ActionResult" />.
+            The <see cref="T:System.Web.Mvc.ActionResult"/>.
             </returns>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.HandleUnknownAction(System.String)">
@@ -93,22 +65,38 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController">
-            <summary>
-            Represents the Controller of the Search results widget.
-            </summary>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.EmptyLinkText">
+            <inheritdoc />
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController.TemplateName">
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.IsEmpty">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.WidgetCssClass">
+            <summary>
+            Gets the widget CSS class.
+            </summary>
+            <value>
+            The widget CSS class.
+            </value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.TemplateName">
             <summary>
             Gets or sets the name of the template that will be displayed.
             </summary>
             <value></value>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController.Model">
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchBoxController.Model">
             <summary>
-            Gets the Search results widget model.
+            Gets the Search box widget model.
             </summary>
-            <value>The model.</value>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController">
+            <summary>
+            Represents the Controller of the Search results widget.
+            </summary>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController.Index(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.String)">
             <summary>
@@ -156,6 +144,18 @@
             Determines whether the search module is activated.
             </summary>
             <returns></returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController.TemplateName">
+            <summary>
+            Gets or sets the name of the template that will be displayed.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Controllers.SearchResultsController.Model">
+            <summary>
+            Gets the Search results widget model.
+            </summary>
+            <value>The model.</value>
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchBoxModel">
             <summary>
@@ -231,6 +231,22 @@
             <summary>
             An interface that provides all common properties and methods for SearchResults model.
             </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchResultsModel.PopulateResults(System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Performs search by given query and populates the results collection.
+            </summary>
+            <param name="searchQuery">The search query.</param>
+            <param name="indexCatalogue">The index catalogue.</param>
+            <param name="skip">The skip.</param>
+            <param name="language">The language of the displayed results.</param>
+            <param name="orderBy">The order by.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchResultsModel.ValidateQuery(System.String@)">
+            <summary>
+            Validates the query.
+            </summary>
+            <param name="searchQuery">The search query.</param>
         </member>
         <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchResultsModel.Results">
             <summary>
@@ -338,22 +354,6 @@
             </summary>
             <value>The languages.</value>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchResultsModel.PopulateResults(System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
-            <summary>
-            Performs search by given query and populates the results collection.
-            </summary>
-            <param name="searchQuery">The search query.</param>
-            <param name="indexCatalogue">The index catalogue.</param>
-            <param name="skip">The skip.</param>
-            <param name="language">The language of the displayed results.</param>
-            <param name="orderBy">The order by.</param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ISearchResultsModel.ValidateQuery(System.String@)">
-            <summary>
-            Validates the query.
-            </summary>
-            <param name="searchQuery">The search query.</param>
-        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Search.Mvc.Models.ListDisplayMode">
             <summary>
             The rendering options for the lists 
@@ -437,7 +437,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchBoxModel.#ctor(System.String,System.Int32,System.String,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchBoxModel" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchBoxModel"/> class.
             </summary>
             <param name="suggestionsRoute">The suggestions service end point.</param>
             <param name="minSuggestionLength">The minimal suggestion length.</param>
@@ -492,51 +492,6 @@
             </summary>
             <param name="languages">The languages.</param>
         </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.Results">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.ResultText">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.ItemsPerPage">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.LimitCount">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.CurrentPage">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.TotalPagesCount">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.DisplayMode">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.AllowSorting">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.OrderBy">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.CssClass">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.IndexCatalogue">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.SearchFields">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.HighlightedFields">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.EscapeSpecialChars">
-            <inheritdoc />
-        </member>
-        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.Languages">
-            <inheritdoc />
-        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.PopulateResults(System.String,System.String,System.Nullable{System.Int32},System.String,System.String)">
             <inheritdoc />
         </member>
@@ -584,6 +539,51 @@
             Initializes the order by enum.
             </summary>
             <param name="orderBy">The order by.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.Results">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.ResultText">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.ItemsPerPage">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.LimitCount">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.CurrentPage">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.TotalPagesCount">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.DisplayMode">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.AllowSorting">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.OrderBy">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.CssClass">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.IndexCatalogue">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.SearchFields">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.HighlightedFields">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.EscapeSpecialChars">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Search.Mvc.Models.SearchResultsModel.Languages">
+            <inheritdoc />
         </member>
         <member name="T:Telerik.Sitefinity.Frontend.Search.Mvc.StringResources.SearchWidgetsResources">
             <summary>
