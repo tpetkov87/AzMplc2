@@ -3017,11 +3017,6 @@
             </summary>
             <value>The Sitefinity DEC Go to link text.</value>
         </member>
-        <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.ExternalLinkDECWebsite">
-            <summary>
-            Gets External Link: Digital Experience Cloud website
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.DataIntelligenceAccountSettingsHeader">
             <summary>
             Gets the DEC account settings header.
@@ -3506,22 +3501,11 @@
             </summary>
             <value>The contact sales.</value>
         </member>
-        <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.ExternalLinkLearnMorePersonas">
-            <summary>
-            Gets External Link: Learn More Personas.
-            </summary>
-            <value>The learn more.</value>
-        </member>
         <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.LearnMorePersonas">
             <summary>
             Gets the learn more.
             </summary>
             <value>The learn more.</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.ExternalLinkLearnMoreLeadScoring">
-            <summary>
-            Gets External Link: Learn more Lead scoring.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.DataIntelligenceResources.LearnMoreLeadScoring">
             <summary>
@@ -4286,11 +4270,6 @@
             The DEC url.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.Web.UI.LeadScoringSimpleControl.LearnMoreLeadScoring">
-            <summary>
-            Gets the Learn More Lead Scoring text.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.Web.UI.LeadScoringSimpleControl.TagKey">
             <inheritdoc />
         </member>
@@ -4351,11 +4330,6 @@
             <value>
             The DEC url.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.Web.UI.PersonasSimpleControl.LearnMorePersonas">
-            <summary>
-            Gets the Learn More Personas text.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.DataIntelligenceConnector.Web.UI.PersonasSimpleControl.TagKey">
             <inheritdoc />

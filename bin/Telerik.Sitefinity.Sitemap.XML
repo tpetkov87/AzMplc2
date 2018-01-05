@@ -1910,11 +1910,6 @@
             Gets the phrase: Sitemap file must have no more than 50,000 URLs.
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.SitemapGenerator.SitemapResources.ExternalLinkSitemapUsageDescription">
-            <summary>
-            Gets External Link: Sitemap website.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.SitemapGenerator.SitemapResources.SitemapUsageDescription">
             <summary>
             Gets the phrase:  Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site.
@@ -2333,11 +2328,6 @@
         <member name="P:Telerik.Sitefinity.SitemapGenerator.Web.UI.GenerateSitemapView.ButtonSettingsContainer">
             <summary>
             Gets the reference to the ButtonSettingsContainer div
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.SitemapGenerator.Web.UI.GenerateSitemapView.SitemapUsageDescription">
-            <summary>
-            Gets the reference to the Sitemap Usage Description
             </summary>
         </member>
     </members>

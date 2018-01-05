@@ -680,11 +680,6 @@
             phrase: Register an application in Dropbox
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.DropboxLibraries.DropboxResources.ExternalLinkRegisterAnApplicationInDropbox">
-            <summary>
-            Gets External Link: Register an application in Dropbox
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.DropboxLibraries.DropboxResources.DropboxStartUsingDropboxAPI">
             <summary>
             phrase: ' to start using the Dropbox API'

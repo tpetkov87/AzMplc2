@@ -1074,21 +1074,6 @@
             phrase: Include in sitemap
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Modules.Blogs.BlogResources.ExternalLinkCreatingBlogsAndBlogPosts">
-            <summary>
-            Gets External Link: Creating blogs and blog posts
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.Blogs.BlogResources.ExternalLinkInsertingBlogContentInPages">
-            <summary>
-            Gets External Link: Inserting blog content in pages
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.Blogs.BlogResources.ExternalLinkBlogsRevisionHistory">
-            <summary>
-            Gets External Link: Blogs revision history
-            </summary>
-        </member>
         <member name="T:Telerik.Sitefinity.Modules.Blogs.BlogsContentTransfer">
             <summary>
             Implements functionality for converting items from blogs content in transferable format.
@@ -13716,16 +13701,6 @@
             </summary>
             <value>Duplicate</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Modules.Lists.ListsResources.ExternalLinkWorkingWithListsAndListsItems">
-            <summary>
-            Gets External Link: Working with lists and lists items in sitefinity
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.Lists.ListsResources.ExternalLinkInsertingListsInSitefinityPages">
-            <summary>
-            Gets External Link: Inserting lists in sitefinity pages
-            </summary>
-        </member>
         <member name="T:Telerik.Sitefinity.Lists.Model.List">
             <summary>
             Persistent type for the List object of the Lists module.
@@ -17422,21 +17397,6 @@
         <member name="P:Telerik.Sitefinity.Modules.News.NewsResources.IncludeInSitemap">
             <summary>
             phrase: Include in sitemap
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.News.NewsResources.ExternalLinkCreateANewsItem">
-            <summary>
-            Gets External Link: Create a news item
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.News.NewsResources.ExternalLinkInsertingNewsItemsInPages">
-            <summary>
-            Gets External Link: Inserting news items in pages
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Modules.News.NewsResources.ExternalLinkNewsRevisionHistory">
-            <summary>
-            Gets External Link: News revision history
             </summary>
         </member>
         <member name="T:Telerik.Sitefinity.Modules.News.Web.Services.NewsItemService">

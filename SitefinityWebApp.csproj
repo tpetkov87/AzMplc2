@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SitefinityWebApp</RootNamespace>
     <AssemblyName>SitefinityWebApp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SilverlightApplicationList>
     </SilverlightApplicationList>
     <FileUpgradeFlags>
@@ -931,6 +931,26 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Sitefinity.Thunder.Contracts">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Sitefinity.Thunder.Contracts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Thunder.Module">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Sitefinity.Thunder.Module.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Thunder.Zip">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Sitefinity.Thunder.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Thunder.CodeSync">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Sitefinity.Thunder.CodeSync.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Telerik.Sitefinity.Translations">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Telerik.Sitefinity.Translations.dll</HintPath>
@@ -1062,6 +1082,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Sitefinity\Default.aspx" />
+    <Content Include="Sitefinity\Public\Services\Thunder\ThunderService.svc" />
     <Content Include="Sitefinity\Services\Analytics\AnalyticsPermissionsService.svc" />
     <Content Include="Sitefinity\Services\Analytics\DashboardData.svc" />
     <Content Include="Sitefinity\Services\Analytics\GoogleAnalytics.svc" />
@@ -1161,6 +1182,7 @@
     <Content Include="Sitefinity\Services\Taxonomies\HierarchicalTaxon.svc" />
     <Content Include="Sitefinity\Services\Taxonomies\MarkedItems.svc" />
     <Content Include="Sitefinity\Services\Taxonomies\Taxonomy.svc" />
+    <Content Include="Sitefinity\Services\Thunder\ThunderService.svc" />
     <Content Include="Sitefinity\Services\Twitter\TwitterUrlShortConfigService.svc" />
     <Content Include="Sitefinity\Services\Twitter\TwitterCredentialsService.svc" />
     <Content Include="Sitefinity\Services\UserProfiles\UserProfileTypesService.svc" />

@@ -3275,12 +3275,6 @@
             </summary>
             <value>Cannot sync content type with name '{0}' because it is not on the root level of the module's hierarchy.</value>
         </member>
-        <member name="P:Telerik.Sitefinity.SharepointConnector.ConnectorResources.ExternalLinkTeamDocumentsWebsite">
-            <summary>
-            Gets External Link: Team documents website
-            </summary>
-            <value>http://teamdocuments.com</value>
-        </member>
         <member name="P:Telerik.Sitefinity.SharepointConnector.Sync.SharePointSyncItem.FoldersHierarchyPath">
             <summary>
             Gets or sets the hierarchy of folders of the synced object.

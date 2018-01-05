@@ -256,19 +256,9 @@
             Phrase: "Learn more"
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkDigitalExperienceCloud">
-            <summary>
-            Gets External Link: Digital experience cloud
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.NewThemeLinkLabel">
             <summary>
             Phrase: "How to switch to the new theme"
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkSitefinityLightTheme">
-            <summary>
-            Gets External Link: Sitefinity light backend theme
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.NewThemeWidgetTitle">
@@ -634,12 +624,6 @@
             </summary>
             <value>Upload photos</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkUploadPhotos">
-            <summary>
-            Gets External Link: Upload photos
-            </summary>
-            <value>http://docs.sitefinity.com/upload-images</value>
-        </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.DashboardConsiderToCaption">
             <summary>
             Phrase: 'Then, consider to...' in the Welcome dashboard widget
@@ -652,23 +636,11 @@
             </summary>
             <value>Manage users</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkManageUsers">
-            <summary>
-            Gets External Link: Manage users
-            </summary>
-            <value>http://docs.sitefinity.com/overview-users</value>
-        </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.DashboardManageTemplatesCaption">
             <summary>
             Phrase: Manage page templates
             </summary>
             <value>Manage page templates</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkManagePageTemplates">
-            <summary>
-            Gets External Link: Manage page templates
-            </summary>
-            <value>http://docs.sitefinity.com/overview-page-templates</value>
         </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.RecentItemsInDesignMode">
             <summary>
@@ -712,12 +684,6 @@
             </summary>
             <value>Label for the documentation link on the dashboard</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkCreateBlog">
-            <summary>
-            Gets External Link: Create a blog
-            </summary>
-            <value>Label for the documentation link on the dashboard</value>
-        </member>
         <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.DashboardNotificationsWidgetTitle">
             <summary>
             Dashboard Notifications
@@ -729,12 +695,6 @@
             Learn how to:
             </summary>
             <value>Learn how to:</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Dashboard.DashboardResources.ExternalLinkDigitalAssetmanagement">
-            <summary>
-            Gets External Link: Digital asset management
-            </summary>
-            <value>http://www.sitefinity.com/web-content-management/digital-asset-management</value>
         </member>
         <member name="T:Telerik.Sitefinity.Dashboard.Data.DashboardDataProvider">
             <summary>

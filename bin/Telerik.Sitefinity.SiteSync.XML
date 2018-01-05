@@ -1493,12 +1493,6 @@
             </summary>
             <value>What is this?</value>
         </member>
-        <member name="P:Telerik.Sitefinity.SiteSync.SiteSyncResources.ExternalLinkSiteSynchronizationKey">
-            <summary>
-            Gets External Link: Site synchronization key
-            </summary>
-            <value>What is this?</value>
-        </member>
         <member name="P:Telerik.Sitefinity.SiteSync.SiteSyncResources.ServerKeyRangeHint">
             <summary>
             phrase: Enter a number from 1 to 100
@@ -2227,18 +2221,6 @@
             message: The server returned unexpected status code '{0}'
             </summary>
             <value>The server returned unexpected status code '{0}'</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.SiteSync.SiteSyncResources.ExternalLinkSynchronizingData">
-            <summary>
-            Gets External Link: Synchronizing data between two servers
-            </summary>
-            <value>http://www.sitefinity.com/documentation/documentationarticles/synchronizing-data-between-two-servers</value>
-        </member>
-        <member name="P:Telerik.Sitefinity.SiteSync.SiteSyncResources.ExternalLinkMigrateSingleSiteToMultisite">
-            <summary>
-            Gets External Link: Migrate a single site to a multisite instance
-            </summary>
-            <value>http://www.sitefinity.com/documentation/documentationarticles/migrate-a-single-site-to-a-multisite-instance</value>
         </member>
         <member name="T:Telerik.Sitefinity.SiteSync.SiteSyncSnapInRegistry">
             <summary>

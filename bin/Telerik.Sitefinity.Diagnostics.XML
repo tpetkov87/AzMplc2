@@ -3242,11 +3242,6 @@
             </summary>
             <value>N+1 Query Problems</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkNPlusOneViewDescription">
-            <summary>
-            Gets External Link: Description of the N+1 query problems View.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.NPlusOneViewDescription">
             <summary>
             Description of the N+1 query problems View.
@@ -3829,11 +3824,6 @@
             The what else can be optimized.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkDeactivateUnusedModulesAndServices">
-            <summary>
-            Gets External Link: deactivate unused modules and services.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DeactivateUnusedModulesAndServices">
             <summary>
             Gets the deactivate unused modules and services.
@@ -3841,11 +3831,6 @@
             <value>
             The deactivate unused modules and services.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkMinifyJavaScriptFiles">
-            <summary>
-            Gets External Link: minify java script files.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.MinifyJavaScriptFiles">
             <summary>
@@ -3855,11 +3840,6 @@
             The minify java script files.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkUsingRelatedData">
-            <summary>
-            Gets External Link: using related data.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.UsingRelatedData">
             <summary>
             Gets the using related data.
@@ -3867,11 +3847,6 @@
             <value>
             The using related data.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkFindMoreTips">
-            <summary>
-            Gets External Link: find more tips.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.FindMoreTips">
             <summary>
@@ -3945,11 +3920,6 @@
             The label of SSL offloading OFF.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkSslOffloadingDescription">
-            <summary>
-            Gets External Link: SSL ofloading description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.SslOffloadingDescription">
             <summary>
             Gets SSL ofloading description.
@@ -3973,11 +3943,6 @@
             <value>
             The static compression OFF label.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkStaticCompressionDescription">
-            <summary>
-            Gets External Link: the static compression description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.StaticCompressionDescription">
             <summary>
@@ -4003,11 +3968,6 @@
             The Dynamic compression OFF label.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkDynamicCompressionDescription">
-            <summary>
-            Gets External Link: the dynamic compression description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DynamicCompressionDescription">
             <summary>
             Gets the dynamic compression description.
@@ -4015,11 +3975,6 @@
             <value>
             The dynamic compression description.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkOutputCacheDescription">
-            <summary>
-            Gets External Link: output cache description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.OutputCacheDescription">
             <summary>
@@ -4029,11 +3984,6 @@
             The output cache description.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkClientCacheDescription">
-            <summary>
-            Gets External Link: client cache description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ClientCacheDescription">
             <summary>
             Gets the client cache description.
@@ -4041,11 +3991,6 @@
             <value>
             The client cache description.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkL2CacheDescription">
-            <summary>
-            Gets External Link: l2 cache description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.L2CacheDescription">
             <summary>
@@ -4063,11 +4008,6 @@
             The client side cache for themes description.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkCacheForPagesDescription">
-            <summary>
-            Gets External Link: cache for pages description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.CacheForPagesDescription">
             <summary>
             Gets the cache for pages description.
@@ -4075,11 +4015,6 @@
             <value>
             The cache for pages description.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkCacheForLibrariesDescription">
-            <summary>
-            Gets External Link: cache for libraries description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.CacheForLibrariesDescription">
             <summary>
@@ -4089,11 +4024,6 @@
             The cache for libraries description.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkDebugModeDescription">
-            <summary>
-            Gets External Link: debug mode description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DebugModeDescription">
             <summary>
             Gets the debug mode description.
@@ -4101,11 +4031,6 @@
             <value>
             The debug mode description.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkCdnForImagesDescription">
-            <summary>
-            Gets External Link: CDN for libraries description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.CdnForImagesDescription">
             <summary>
@@ -4115,11 +4040,6 @@
             The CDN for libraries description.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkScriptsCombiningFrontEndDescription">
-            <summary>
-            Gets External Link: scripts combining front end description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ScriptsCombiningFrontEndDescription">
             <summary>
             Gets the scripts combining front end description.
@@ -4128,11 +4048,6 @@
             The scripts combining front end description.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkScriptsCombiningBackEndDescription">
-            <summary>
-            Gets External Link: scripts combining back end description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ScriptsCombiningBackEndDescription">
             <summary>
             Gets the scripts combining back end description.
@@ -4140,11 +4055,6 @@
             <value>
             The scripts combining back end description.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkCombineStyleSheetsDescription">
-            <summary>
-            Gets External Link: combine style sheets description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.CombineStyleSheetsDescription">
             <summary>
@@ -4202,11 +4112,6 @@
             The RSS cache label.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkRssCacheDescription">
-            <summary>
-            Gets External Link: RSS cache description.
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.RssCacheDescription">
             <summary>
             Gets the RSS cache description.
@@ -4230,11 +4135,6 @@
             <value>
             The Pages Permissions Cache OFF label.
             </value>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ExternalLinkPagesPermissionsCacheDescription">
-            <summary>
-            Gets External Link: Pages Permissions Cache description.
-            </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.PagesPermissionsCacheDescription">
             <summary>
@@ -5615,11 +5515,6 @@
             The name of the profiler tool.
             </value>
         </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.NPlusOneView.NPlusOneViewDescription">
-            <summary>
-            Gets the reference to the control which N+1 description.
-            </summary>
-        </member>
         <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.StoredProcedureView">
             <summary>
             This class contains the logic for stored procedure report view.
@@ -6046,89 +5941,9 @@
             Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView"/> class.
             </summary>
         </member>
-        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.SetControlsText">
-            <summary>
-            Sets the Text for the controls with description
-            </summary>
-        </member>
         <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.LayoutTemplatePath">
             <summary>
             Gets the layout template path
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.SslOffloadingDescription">
-            <summary>
-            Gets the reference to the control whith SSL Offloading description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.StaticCompressionDescription">
-            <summary>
-            Gets the reference to the control whith Static Compression description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.DynamicCompressionDescription">
-            <summary>
-            Gets the reference to the control whith Dynamic Compression description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.OutputCacheDescription">
-            <summary>
-            Gets the reference to the control whith Output Cache description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.ClientCacheDescription">
-            <summary>
-            Gets the reference to the control whith Client Cache description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.L2CacheDescription">
-            <summary>
-            Gets the reference to the control whith L2 Cache description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.CacheForPagesDescription">
-            <summary>
-            Gets the reference to the control whith Cache For Pages description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.CacheForLibrariesDescription">
-            <summary>
-            Gets the reference to the control whith Cache For Libraries description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.DebugModeDescription">
-            <summary>
-            Gets the reference to the control whith Debug Mode description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.CdnForImagesDescription">
-            <summary>
-            Gets the reference to the control whith CDN For Images description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.ScriptsCombiningDescription">
-            <summary>
-            Gets the reference to the control whith Scripts Combining description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.ScriptsCombiningBackEndDescription">
-            <summary>
-            Gets the reference to the control whith Scripts Combining BackEnd description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.CombineStyleSheetsDescription">
-            <summary>
-            Gets the reference to the control whith Combine StyleSheets description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.RssCacheDescription">
-            <summary>
-            Gets the reference to the control whith RSS Cache description.
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.PerformanceTips.Web.UI.PerformanceTipsView.PagesPermissionsCacheDescription">
-            <summary>
-            Gets the reference to the control whith Pages Permissions Cache description.
             </summary>
         </member>
         <member name="T:Telerik.Sitefinity.Diagnostics.Tools.BackgroundTasks.Web.UI.BackgroundTaskDetailsDialog">
