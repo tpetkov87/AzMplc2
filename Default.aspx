@@ -1,6 +1,16 @@
-﻿<%@ Page Inherits="Telerik.Sitefinity.Web.IIS6.DefaultAspxPage" AutoEventWireup="true" %>
-<%-- 
-    Please do not delete this file. It is used to ensure that ASP.NET MVC is 
-    activated by IIS when a user makes a "/" request to the server. 
---%>
- 
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EmptyProject.Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    Default
+    </div>
+    </form>
+</body>
+</html>
