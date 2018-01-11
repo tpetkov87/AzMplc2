@@ -335,6 +335,44 @@
             <param name="filterOption"></param>
             <returns></returns>
         </member>
+        <member name="T:Telerik.Sitefinity.Analytics.Server.Infrastructure.Services.MapDataService">
+            <summary>
+            Provides methods for retrieving map view data which corresponds to given analytical metrics.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Analytics.Server.Infrastructure.Services.MapDataService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Analytics.Server.Infrastructure.Services.MapDataService"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Analytics.Server.Infrastructure.Services.MapDataService.GetTopCities(System.DateTime,System.DateTime,System.Guid,System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Analytics.Server.Core.Domain.Model.Metric},System.String)">
+            <summary>
+            Gets the corresponding top cities data for the provided metrics.
+            </summary>
+            <param name="startDate">The start date.</param>
+            <param name="endDate">The end date.</param>
+            <param name="dashboardId">The dashboard identifier.</param>
+            <param name="metrics">The metrics.</param>
+            <param name="filter">The filter.</param>
+            <returns>
+            The top cities data.
+            </returns>
+            <exception cref="T:Telerik.Sitefinity.Analytics.Server.Core.Exceptions.DashboardPermissionsException"></exception>
+        </member>
+        <member name="M:Telerik.Sitefinity.Analytics.Server.Infrastructure.Services.MapDataService.GetTopCountries(System.DateTime,System.DateTime,System.Guid,System.Collections.Generic.IEnumerable{Telerik.Sitefinity.Analytics.Server.Core.Domain.Model.Metric},System.String)">
+            <summary>
+            Gets the corresponding top countries data for the provided metrics.
+            </summary>
+            <param name="startDate">The start date.</param>
+            <param name="endDate">The end date.</param>
+            <param name="dashboardId">The dashboard identifier.</param>
+            <param name="metrics">The metrics.</param>
+            <param name="filter">The filter.</param>
+            <returns>
+            The top countries data.
+            </returns>
+            <exception cref="T:Telerik.Sitefinity.Analytics.Server.Core.Exceptions.DashboardPermissionsException"></exception>
+        </member>
         <member name="M:Telerik.Sitefinity.Analytics.Server.Infrastructure.ValueResolvers.GoogleAnalyticsResolver.ResolveMedium(Telerik.Sitefinity.Analytics.Server.Core.Domain.Model.GoogleAnalyticsEntry)">
             <summary>
             Returns the medium as enum.
