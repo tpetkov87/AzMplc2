@@ -27,9 +27,10 @@ To run the app, just click the below "Deploy to Azure" button.
 	2. Configure Redis Cache if needed.
 	3. Access content via Kudu;
 
-## Sitefinity documentation
+## Sitefinity site and documentation
 
-https://docs.sitefinity.com/
+Product site - https://sitefinity.com/
+Documentation - https://docs.sitefinity.com/
 
 
 
