@@ -30,6 +30,7 @@ To run the app, just click the below "Deploy to Azure" button.
 ## Sitefinity site and documentation
 
 Product site - https://sitefinity.com/
+
 Documentation - https://docs.sitefinity.com/
 
 
