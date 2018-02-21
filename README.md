@@ -10,9 +10,10 @@ Sitefinity is a modern ASP.NET Web CMS, delivering intuitive web content managem
 ### Running via Visual Studio
 
 To run the app:
-		a. Clone the app repository.
-		b. Open the solution in Visual Studio (using the SitefinityWebApp.sln file).
-		c. Run the app.
+
+a. Clone the app repository.
+b. Open the solution in Visual Studio (using the SitefinityWebApp.sln file).
+c. Run the app.
 
 ### Running in Azure
 
