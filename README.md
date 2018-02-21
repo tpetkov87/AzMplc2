@@ -1,3 +1,7 @@
+## Introduction
+
+Sitefinity is a modern ASP.NET Web CMS, delivering intuitive web content management for business professionals, robust CMS development environment and rich end user experience. This GitHub repository contains an empty Sitefinity Web App prepared for deployment in Azure App Service.
+
 ## Application setup
 
 	1. Cloning the app in Visual Studio 2015 or higher. 
@@ -23,5 +27,6 @@ To run the app, just click the below "Deploy to Azure" button.
 	3. Access content via Kudu;
 
 ## Content administration
+
 
 
