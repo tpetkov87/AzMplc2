@@ -1,0 +1,23 @@
+﻿.normal
+{
+    display:block;
+    color:Gray;
+}
+
+.negative
+{
+    display:block;
+    color:Red;
+}
+
+.positive
+{  
+    display:block;
+    color:Green;
+}
+
+.initialize
+{
+    display:none;
+}
+

@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MessageTest.master.cs" 
+Inherits="SitefinityWebApp.ComponentTests.SitefinityJS.Message.MessageTest" 
+MasterPageFile="~/Tests/ComponentTests/Component.Master" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript" src="/SitefinityJS/sitefinity.form.js"></script>
+    <script type="text/javascript" src="/SitefinityJS/kendo.sf.validation.js"></script>
+    <script type="text/javascript" src="/SitefinityJS/sitefinity.message.js"></script>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="suiteTitle" runat="server">
+    SitefinityJS | Message 
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="workarea" runat="server">
+    
+    <h3>
+        <asp:ContentPlaceHolder ID="testTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </h3>
+
+    <asp:ContentPlaceHolder ID="testDescription" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="testCode" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="test" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div class="executeButton">
+        <asp:ContentPlaceHolder ID="buttons" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+</asp:Content>

@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ComponentTest.master.cs" Inherits="SitefinityWebApp.ComponentTests.ComponentTest" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+    
+        body { font-family: Arial, Verdana, Sans-Serif; font-size:12px; }
+        .testCase { border:1px solid #CCCCCC; margin:10px; padding:10px; }
+        .executeButton { margin:15px 0 0 0; }
+    
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>
+            <asp:ContentPlaceHolder ID="suiteTitle" runat="server">
+            </asp:ContentPlaceHolder>
+        </h1>
+
+        <asp:ContentPlaceHolder ID="testsArea" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Component.master.cs" Inherits="SitefinityWebApp.ComponentTests.Component" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="/Kendo/Styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Kendo/Styles/kendo.kendo.min.css" rel="stylesheet" type="text/css" />
+    <link href="SitefinityJS/Message/MessageStates.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/Kendo/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="/Kendo/kendo.all.min.js"></script>
+
+    <script type="text/javascript" src="/SitefinityJS/sitefinity.core.js"></script>
+    <script type="text/javascript" src="/SitefinityJS/sitefinity.form.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+    
+        body { font-family: Arial, Verdana, Sans-Serif; font-size:12px; }
+        a { color:Blue; }
+        .testCase { border:1px solid #CCCCCC; margin:10px; padding:10px; }
+        .executeButton { margin:15px 0 0 0; }
+    
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <h1>
+        Sitefinity Component Tests
+    </h1>
+
+    <table width="100%" cellpadding="0" cellspacing="10" border="0">
+        <tr>
+            <td style="vertical-align:top; width:200px;">
+                <strong>Navigation</strong>
+                <ul id="navigation">
+                    <li>
+                        Form
+                        <ul>
+                            <li>
+                                <a href="/ComponentTests/SitefinityJS/Form/InitializeForm.aspx">Initialize form</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> jQuery Message Plugin 
+                        <ul>
+                            <li>
+                                <a href="/ComponentTests/SitefinityJS/Message/InitializeMessage.aspx">How to use</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Module builder
+                        <ul>
+                            <li>
+                                <a href="/ComponentTests/ModuleBuilder/Installers/DataStructureInstallerTest.aspx">Data structure installer</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Code References
+                        <ul>
+                            <li>
+                                <a href="CodeReferences/CreateItemComponentTest.aspx">Create Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+            <td style="vertical-align:top;">
+                <h2>
+                    Suite :
+                    <asp:ContentPlaceHolder ID="suiteTitle" runat="server">
+                    </asp:ContentPlaceHolder>
+                </h2>
+
+                <div class="testCase">
+                    <asp:ContentPlaceHolder ID="workarea" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>        
+            </td>
+        </tr>
+    </table>
+    </form>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#navigation").kendoTreeView();
+            var treeview = $("#navigation").data("kendoTreeView");
+            treeview.expand(".t-item");
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\SitefinityWebApp\bin\Telerik.Sitefinity.Frontend.TestUtilities.dll">
+   <Modules>
+    <Module Name="telerik.sitefinity.frontend.testutilities.dll">
+     <Namespaces>
+      <Namespace Name="Telerik.Sitefinity.Frontend.TestUtilities.CommonOperations">
+       <Types>
+        <Type Name="FeatherWebRequestsOperations" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetResponseContentFromAuthenticateGetRequest(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations" File="FeatherWebRequestsOperations.cs" Line="34">Change the type of parameter 'url' of method 'FeatherWebRequestsOperations.GetResponseContentFromAuthenticateGetRequest(string)' from string to System.Uri, or provide an overload of 'FeatherWebRequestsOperations.GetResponseContentFromAuthenticateGetRequest(string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MakeAuthenticateGetRequest(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations" File="FeatherWebRequestsOperations.cs" Line="22">Modify 'FeatherWebRequestsOperations.MakeAuthenticateGetRequest(string)' to call 'HttpClient.Send(HttpMethod, Uri)' instead of 'HttpClient.Send(HttpMethod, string)'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations" File="FeatherWebRequestsOperations.cs" Line="22">Change the type of parameter 'url' of method 'FeatherWebRequestsOperations.MakeAuthenticateGetRequest(string)' from string to System.Uri, or provide an overload of 'FeatherWebRequestsOperations.MakeAuthenticateGetRequest(string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MakeAuthenticatePutRequest(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations" File="FeatherWebRequestsOperations.cs" Line="45">Modify 'FeatherWebRequestsOperations.MakeAuthenticatePutRequest(string, string)' to call 'HttpRequestMessage.HttpRequestMessage(string, Uri)' instead of 'HttpRequestMessage.HttpRequestMessage(string, string)'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations" File="FeatherWebRequestsOperations.cs" Line="45">Change the type of parameter 'url' of method 'FeatherWebRequestsOperations.MakeAuthenticatePutRequest(string, string)' from string to System.Uri, or provide an overload of 'FeatherWebRequestsOperations.MakeAuthenticatePutRequest(string, string)', that allows 'url' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PagesOperations" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreatePage(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="2#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2018-03-29 07:50:46Z" FixCategory="Breaking">
+             <Issue Certainty="60" Level="Error" Path="D:\CMS\Sitefinity 4.0\OfficialReleases\Release_10_2_Fixes\Feather\Tests\Telerik.Sitefinity.Frontend.TestUtilities\CommonOperations\Pages" File="PagesOperations.cs" Line="77">Change the type of parameter 'pageUrlName' of method 'PagesOperations.CreatePage(string, string, string)' from string to System.Uri, or provide an overload of 'PagesOperations.CreatePage(string, string, string)', that allows 'pageUrlName' to be passed as a System.Uri object.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="PassSystemUriObjectsInsteadOfStrings" Category="Microsoft.Usage" CheckId="CA2234">
+   <Name>Pass System.Uri objects instead of strings</Name>
+   <Description>If there are two overloads one taking System.Uri and one taking System.String, library code should never call the string-based overload.</Description>
+   <Resolution Name="Default">Modify {0} to call {1} instead of {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182360.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054">
+   <Name>URI parameters should not be strings</Name>
+   <Description>If a parameter name contains "uri" or "url" or "urn", and it's typed as string, the parameter type should be changed to System.Uri, unless there is an overload method where the same parameter is typed as System.Uri.</Description>
+   <Resolution Name="Default">Change the type of parameter {0} of method {1} from string to System.Uri, or provide an overload of {1}, that allows {0} to be passed as a System.Uri object.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182174.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

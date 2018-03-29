@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TestBase.master.cs" Inherits="SitefinityWebApp.JsTests.tests.TestBase" %>
+<%@ Register Namespace="Telerik.Sitefinity.Web.UI" Assembly="Telerik.Sitefinity" TagPrefix="sitefinity" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function setUpPage() {
+            Sys.Application.add_init(function() {
+                window.setUpPageStatus = "complete";
+            });
+        }
+
+        var dummyElementId = "dummyElement";
+
+        // -------------- mocks --------------
+        function createMockDelegate() {
+            return Function.createDelegate(this, mockEventHandler);
+        }
+
+        function mockEventHandler() {
+            // do nothing
+        }
+
+        // -------------- assertions --------------
+        
+        // TODO: improve this assertion to verify that proper delegate was registered under the
+        // handler name
+        function assertDelegateAdded(component, delegate, handlerName) {
+            assertNotNull(component.get_events().getHandler(handlerName));
+        }
+        
+        function assertDelegateRemoved(component, delegate, handlerName) {
+            assertNull(component.get_events().getHandler(handlerName));
+        }
+        
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="dummyElement"></div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/JsTests/app/jsUnitCore.js" />
+            <asp:ScriptReference Path="~/JsTests/jsMock/jsMock.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div>
+        <asp:ContentPlaceHolder ID="TestBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
